@@ -29,7 +29,7 @@ if(mysqli_num_rows($Sqlquery)>0){
 		<td><?php echo $fetchrow['cat']?></td>
 		<td><?php echo $fetchrow['order']?></td>
 		<td>
-			<a href="manage_category.php?id=<?php echo$fetchrow['id']?>"><label class="badge badge-success">Edit</label></a>&nbsp;
+			<a href="manage_category.php?categories=<?php echo $fetchrow['cat']?>"><label class="badge badge-success">Edit</label></a>&nbsp;
 			
 			<a href="?id="><label class="badge badge-danger">Active</label></a>
 			

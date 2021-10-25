@@ -92,6 +92,27 @@ else{
               <span class="menu-title">users</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./delivary.php">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Delivary boy</span>
+            </a>
+          </li>
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="./coupan.php">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">coupan</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./dish.php">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Dish</span>
+            </a>
+          </li>
 		  
           
         </ul>
