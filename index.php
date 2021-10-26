@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- <?php
+include './top.php';
 
-<head>
-    <!-- basic -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <!-- site metas -->
-    <title>Spicyo</title>
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- owl css -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- responsive-->
-    <link rel="stylesheet" href="css/responsive.css">
-    <!-- awesome fontfamily -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
-</head>
+
+?> -->
 <!-- body -->
 
 <body class="main-layout">
@@ -38,67 +14,7 @@
     <div class="wrapper">
     <!-- end loader -->
 
-     <div class="sidebar">
-            <!-- Sidebar  -->
-            <nav id="sidebar">
-
-                <div id="dismiss">
-                    <i class="fa fa-arrow-left"></i>
-                </div>
-
-                <ul class="list-unstyled components">
-
-                    <li class="active">
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="about.html">About</a>
-                    </li>
-                    <li>
-                        <a href="recipe.html">Recipe</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-
-            </nav>
-        </div>
-
-    <div id="content">
-    <!-- header -->
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="full">
-                        <a class="logo" href="index.html"><img src="images/logo.png" alt="#" /></a>
-                    </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="full">
-                        <div class="right_header_info">
-                            <ul>
-                                <li class="dinone">Contact Us : <img style="margin-right: 15px;margin-left: 15px;" src="images/phone_icon.png" alt="#"><a href="#">987-654-3210</a></li>
-                                <li class="dinone"><img style="margin-right: 15px;" src="images/mail_icon.png" alt="#"><a href="#">demo@gmail.com</a></li>
-                                <li class="dinone"><img style="margin-right: 15px;height: 21px;position: relative;top: -2px;" src="images/location_icon.png" alt="#"><a href="#">104 New york , USA</a></li>
-                                <li class="button_user"><a class="button active" href="#">Login</a><a class="button" href="#">Register</a></li>
-                                <li><img style="margin-right: 15px;" src="images/search_icon.png" alt="#"></li>
-                                <li>
-                                    <button type="button" id="sidebarCollapse">
-                                        <img src="images/menu_icon.png" alt="#">
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+     <?php include './nav.php' ?>
     <!-- end header -->
     <!-- start slider section -->
     <div class="slider_section">
@@ -180,97 +96,41 @@
     <div class="row">
         <div class="col-md-12">
             <div class="owl-carousel owl-theme">
+                <?php
+                $fetchfood = "SELECT * FROM `dish` limit 8 ";
+                $fetchsql =mysqli_query($con , $fetchfood);
 
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs1.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Homemade</h3>
-                        <h4><span class="theme_color">$</span>10</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs2.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs3.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Egg</h3>
-                        <h4><span class="theme_color">$</span>30</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs4.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Sushi Dizzy</h3>
-                        <h4><span class="theme_color">$</span>40</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs5.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>The Coffee Break</h3>
-                        <h4><span class="theme_color">$</span>50</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs1.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Homemade</h3>
-                        <h4><span class="theme_color">$</span>10</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs2.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Noodles</h3>
-                        <h4><span class="theme_color">$</span>20</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs3.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Egg</h3>
-                        <h4><span class="theme_color">$</span>30</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs4.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>Sushi Dizzy</h3>
-                        <h4><span class="theme_color">$</span>40</h4>
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="product_blog_img">
-                        <img src="images/rs5.png" alt="#" />
-                    </div>
-                    <div class="product_blog_cont">
-                        <h3>The Coffee Break</h3>
-                        <h4><span class="theme_color">$</span>50</h4>
-                    </div>
-                </div>
+                if(mysqli_num_rows($fetchsql)>0){
+                    while($row = mysqli_fetch_assoc($fetchsql)){
+                    ?>  <div class="item">
+                      
+                        <a href="single_product.php?name=<?php echo $row['dishname']?>">
+                        <div class="parent-product">
+                        <div class="product_blog_img">
+                             <img src="<?php echo $row['dish_image']?>" style ="height:200px; border-radius:50%;" alt="#" />
+                         </div>
+                         <div class="product_blog_cont">
+                             <h3><?php echo $row['dishname']?></h3>
+                             <h4><span class="theme_color">$</span><?php echo $row['OURPRICE']?></h4>
+                         </div>
+     
+                    </a>
+                         <!-- <div class="icon bg-whilte text-white d-flex justify-content-around">
+     
+                         <i class="fas fa-cart-plus fs-4"></i>
+                         <i class="fas fa-bookmark fs-4"></i>
+                             
+                         </div> -->
+                        </div>
+                        </a>
+                     </div>;<?php
+                    }
+                }
+
+                ?>
+
+              
+                
 
             </div>
         </div>
@@ -325,40 +185,32 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+
+    <?php
+                
+                $fetchfood = "SELECT * FROM `dish` limit 3; ";
+                $fetchsql =mysqli_query($con , $fetchfood);
+                if(mysqli_num_rows($fetchsql)>0){
+                    while($row = mysqli_fetch_assoc($fetchsql)){
+                       ?> <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
+        <a href="single_blog.php?blogname=<?php echo $row['dishname']?>">
         <div class="blog_box">
           <div class="blog_img_box">
-            <figure><img src="images/blog_img1.png" alt="#"/>
+            <figure><img src="<?php echo $row['dish_image']?>" style ="height:200px; alt="#"/>
              <span>02 FEB 2019</span>
             </figure>
           </div>
-          <h3>Spicy Barger</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 mar_bottom">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img2.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Egg & Tosh</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-        <div class="blog_box">
-          <div class="blog_img_box">
-            <figure><img src="images/blog_img3.png" alt="#"/>
-             <span>02 FEB 2019</span>
-            </figure>
-          </div>
-          <h3>Pizza</h3>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the </p>
-        </div>
-      </div>
-    </div>
+          <h3><?php echo $row['dishname']?> </h3>
+<p>
+<?php echo $row['dish_desc']?>
+</p>        </div>
+        </a>
+      </div><?php
+                    }
+                }
+                    ?>
+        
+       
   </div>
 </div>
 <!-- end blog -->
@@ -389,143 +241,7 @@
 <!-- end Our Client -->
 </div>
     <!-- footer -->
-    <fooetr>
-        <div class="footer">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class=" col-md-12">
-                    <h2>Request  A<strong class="white"> Call  Back</strong></h2>
-                  </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                      
-                        <form class="main_form">
-                            <div class="row">
-                             
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Name" type="text" name="Name">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Email" type="text" name="Email">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <input class="form-control" placeholder="Phone" type="text" name="Phone">
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <textarea class="textarea" placeholder="Message" type="text" name="Message"></textarea>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                    <button class="send">Send</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-                        <div class="img-box">
-                            <figure><img src="images/img.jpg" alt="img" /></figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="footer_logo">
-                          <a href="index.html"><img src="images/logo1.jpg" alt="logo" /></a>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <ul class="lik">
-                            <li class="active"> <a href="index.html">Home</a></li>
-                            <li> <a href="about.html">About</a></li>
-                            <li> <a href="recipe.html">Recipe</a></li>
-                            <li> <a href="blog.html">Blog</a></li>
-                            <li> <a href="contact.html">Contact us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="new">
-                            <h3>Newsletter</h3>
-                            <form class="newtetter">
-                                <input class="tetter" placeholder="Your email" type="text" name="Your email">
-                                <button class="submit">Subscribe</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-                </div>
-            </div>
-        </div>
-    </fooetr>
-    <!-- end footer -->
-
-    </div>
-    </div>
-    <div class="overlay"></div>
-    <!-- Javascript files-->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/custom.js"></script>
-     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-    
-     <script src="js/jquery-3.0.0.min.js"></script>
-   <script type="text/javascript">
-        $(document).ready(function() {
-            $("#sidebar").mCustomScrollbar({
-                theme: "minimal"
-            });
-
-            $('#dismiss, .overlay').on('click', function() {
-                $('#sidebar').removeClass('active');
-                $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function() {
-                $('#sidebar').addClass('active');
-                $('.overlay').addClass('active');
-                $('.collapse.in').toggleClass('in');
-                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
-        });
-    </script>
-
-    <style>
-    #owl-demo .item{
-        margin: 3px;
-    }
-    #owl-demo .item img{
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-    </style>
-
-     
-      <script>
-         $(document).ready(function() {
-           var owl = $('.owl-carousel');
-           owl.owlCarousel({
-             margin: 10,
-             nav: true,
-             loop: true,
-             responsive: {
-               0: {
-                 items: 1
-               },
-               600: {
-                 items: 2
-               },
-               1000: {
-                 items: 5
-               }
-             }
-           })
-         })
-      </script>
-
+    <?php include 'footer.php' ?>
 </body>
 
 </html>
